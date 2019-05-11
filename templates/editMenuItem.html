@@ -1,0 +1,31 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<html>
+    
+    <div class="row padding-top padding-bottom">
+            <div class="col-md-6 col-md-offset-1 padding-top">
+                <form action= "{{url_for('editMenuItem', item_id=item.id)}}" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type ="text" maxlength="100" class="form-control" name="name" type="text" value="{{item.name}}">
+                        <label for="category_name">Category:</label>
+                        <select class="form-control" name="category_name">
+                        {% for i in categories %}
+                        <option {% if item.category_name == i.name %}selected{% endif %}>{{i.name}}</option>
+                        {% endfor %}
+                        </select>
+                        <label for="description">Description:</label>
+                        <textarea class="form-control" maxlength="250" rows="3" name="description">{{item.description}}</textarea>
+                        <button type="submit" class="btn btn-default" id="submit" type="submit">
+					    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Save</button>
+					    <a href = '{{url_for('catalogMenu')}}'>
+						<button class="btn btn-default delete">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
+					    </a>
+                    </div>
+                </form>
+            </div>
+    </div>
+</html> 
+{% endblock %}

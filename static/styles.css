@@ -1,0 +1,205 @@
+* {
+	font-family: "Helvetica Neue Bold", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h1 {
+	font-family: "Helvetica Neue Light", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 50px;
+	color: #51453B;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	color: #42C3C9;
+	line-height: 29px;
+}
+
+h3 {
+	font-size: 18px;
+	color: #4A4A4A;
+	line-height: 23px;
+}
+ p {
+ 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
+ 	font-size: 16px;
+ 	color: #7B7573;
+ 	line-height: 24px;
+	 font-weight: 400;
+ }
+
+ strong {
+ 	font-size: 16px;
+ 	color: #ffffff;
+ 	line-height: 24px;
+ }
+
+ a {
+ 	font-size: 14px;
+ 	color: #ffffff;
+ 	line-height: 17px;
+ }
+
+ .app-header a:hover{
+	 color: #ffffff;
+ }
+
+.padding-top {
+	padding-top: 30px;
+}
+.padding-bottom {
+	padding-bottom: 30px;
+}
+.margin-right {
+	margin-right: 30px;
+}
+.padding-none {
+	padding: 0;
+}
+.btn {
+	padding: 20px;
+	margin-top: 10px;
+	border-color: #005f9e;
+	border-width: 2px;
+	color:#005f9e;;
+}
+.btn:hover {
+	border-color: #005f9e;
+}
+.btn.delete {
+	color: #aaaaaa;
+}
+.btn.delete:hover {
+	background-color: #E2E2E7;
+	color: red;
+}
+
+.btn-default:hover{
+	background-color: #005f9e;
+	color: #ffffff;
+}
+.glyphicon {
+	margin-right: 10px;
+}
+.top-menu {
+}
+.top-menu p {
+	line-height: 16px;
+}
+.divider {
+	height: 30px;
+}
+
+.divider.green {
+	background-color: #005f9e;
+}
+.banner.menu {
+	height: 150px;
+	background-color: #E2E2E7;
+}
+.banner.profile {
+	height: 150px;
+	background-color: #A6E8EB;
+}
+.banner h1 {
+	margin: 45px 0;
+}
+ .restaurant-list {
+	 padding-top: 20px;
+	 border-left: solid 1px #E2E2E7;
+ }
+ .restaurant-list .item a{
+	 color: #005f9e;
+	 font-size: 16px;
+ }
+ .restaurant-list .item{
+	margin: 5px 0 10px 0;
+}
+.menu-item {
+	background: #F0F0F0;
+	padding: 20px;
+	margin: 20px;
+	margin-left: -20px;
+
+}
+.menu-item .item-action{
+	color: #0093B9;
+}
+.menu-price {
+	font-weight: 700;
+}
+.creator {
+	padding-right: 20px;
+	text-align: right;
+	float:right;
+}
+.creator img {
+	width: 100px;
+	border-radius: 50%;
+}
+.creator figcaption {
+	font-size: 14px;
+	color: #7B7573;
+	font-weight: 400;
+}
+.flash {
+	background-color: #005f9e;
+	width:100%;
+	text-decoration: none;
+
+}
+
+.flash li {
+	list-style-type: none;
+	text-align: center;
+
+}
+
+.form-control {
+	margin: 10px 0;
+}
+.align-right{
+	float: right;
+}
+.row {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	margin-top: 120px;
+	padding: 20px;
+}
+body{
+	background-color: #aaaaaa;
+	margin: 0;
+}
+
+.app-header{
+	height: 50px;
+	background-color: #005f9e;
+	color: #ffffff;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	float: right;
+}
+
+.login-button{
+	float: right;
+    padding-top: 15px;
+}
+
+.login-button a {
+	padding-right: 10px;
+}
+.container {
+	height: 55px;
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	color: #aaaaaa;
+}

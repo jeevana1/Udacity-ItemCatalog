@@ -1,0 +1,26 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+<html>
+        <div class="row padding-top padding-bottom">
+                <div class="col-md-6 col-md-offset-1 padding-top">
+                        <form action= "{{url_for('addMenuItem', category_id=item.id)}}" method="POST">
+                            <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type ="text" class="form-control" maxlength="100" name="name">
+                                    <label for="course">Category:</label>
+                                    <select class="form-control" name="category_name" disabled>
+                                        {% for i in categories %}
+                                        <option {% if item.name == i.name %}selected{% endif %}>{{i.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <label for="description">Description:</label>
+					                <textarea class="form-control" maxlength="250" rows="3" name="description" placeholder="Description of the Item"></textarea>
+                                    <button type="submit" class="btn btn-default" id="submit" type="submit">
+                                    <span class="glyphicon glyphicon-glass" aria-hidden="true"></span>Create</button>
+                            </div>
+                            </form>
+                </div>
+        </div>
+</html>
+{% endblock %}
